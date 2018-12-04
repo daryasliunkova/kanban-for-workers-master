@@ -1,4 +1,4 @@
-package com.epam.dsliunkova.kanbanforworkersmaster;
+package com.dsliunkova.kanbanforworkersmaster;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

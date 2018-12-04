@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.epam.dsliunkova</groupId>
+	<groupId>com.dsliunkova</groupId>
 	<artifactId>kanban-for-workers-master</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -26,10 +26,40 @@
 	</properties>
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>27.0-jre</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.appreciated/app-layout-addon -->
+		<dependency>
+			<groupId>com.vaadin</groupId>
+			<artifactId>vaadin-app-layout-flow</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.vaadin/vaadin-tabs-flow -->
+		<dependency>
+			<groupId>com.vaadin</groupId>
+			<artifactId>vaadin-tabs-flow</artifactId>
+			<version>1.2.0</version>
+		</dependency>
+
+
+		<!-- H2 Database -->
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		<!--<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -44,11 +74,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
-		</dependency>
+		</dependency>-->
 	</dependencies>
 
 	<dependencyManagement>
